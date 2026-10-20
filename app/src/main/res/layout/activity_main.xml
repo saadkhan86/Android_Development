@@ -24,7 +24,9 @@
         android:layout_height="wrap_content"
         android:layout_margin="2dp"
         android:hint="Student Name"
-        android:padding="15dp" />
+        android:padding="10dp"
+        android:inputType="text"
+        />
 
     <EditText
         android:id="@+id/s_reg_no"
@@ -32,8 +34,8 @@
         android:layout_height="wrap_content"
         android:layout_margin="2dp"
         android:hint="Registration Number"
-        android:padding="15dp"
-
+        android:padding="10dp"
+        android:inputType="text"
         />
 
     <EditText
@@ -42,24 +44,28 @@
         android:layout_height="wrap_content"
         android:layout_margin="2dp"
         android:hint="Email Address"
-        android:padding="15dp" />
+        android:padding="10dp"
+        android:inputType="textEmailAddress"
+        />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="4px"
-        android:padding="5dp"
+        android:padding="10dp"
         android:text="Gender"
         android:textSize="16sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        />
 
     <RadioGroup
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="left"
         android:orientation="horizontal"
-        android:padding="5dp"
+        android:padding="10dp"
         android:id="@+id/rg_gender"
+
         >
 
         <RadioButton
@@ -67,21 +73,21 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:checked="true"
-            android:padding="5dp"
+            android:padding="10dp"
             android:text="Male" />
 
         <RadioButton
             android:id="@+id/female"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:padding="5dp"
+            android:padding="10dp"
             android:text="Female" />
 
         <RadioButton
             android:id="@+id/personal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:padding="5dp"
+            android:padding="10dp"
             android:text="personal" />
 
     </RadioGroup>
@@ -90,7 +96,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="4px"
-        android:padding="5dp"
+        android:padding="10dp"
         android:text="Department"
         android:textSize="16sp"
         android:textStyle="bold" />
@@ -98,5 +104,18 @@
     <Spinner
         android:id="@+id/spinner_depart"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:padding="5dp"
+        />
+    <Button
+        android:id="@+id/submit_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_gravity="left"
+        android:text="Submit"
+        android:textSize="16sp"
+        />
+
 </LinearLayout>
